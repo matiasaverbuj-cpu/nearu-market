@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ============ SEO ============ -->
+<title>NEARU Market | Mercados autónomos para edificios en Panamá</title>
+<meta name="description" content="Mercados autónomos premium para edificios residenciales en Panamá. Formatos Mini, Lobby y containers exteriores de 20 y 40 pies.">
+<meta name="author" content="NEARU Market">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#123B32">
+<link rel="canonical" href="https://nearu.market/">
+
+<!-- ============ Open Graph ============ -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="NEARU Market">
+<meta property="og:locale" content="es_PA">
+<meta property="og:title" content="NEARU Market | Mercados autónomos para edificios en Panamá">
+<meta property="og:description" content="Mercados autónomos premium para edificios residenciales en Panamá. Formatos Mini, Lobby y containers exteriores de 20 y 40 pies.">
+<meta property="og:url" content="https://nearu.market/">
+<meta property="og:image" content="https://nearu.market/images/full/nearu-lobby-14-20m2.jpg">
+<meta property="og:image:width" content="1920">
+<meta property="og:image:height" content="1080">
+<meta property="og:image:alt" content="Mercado autónomo NEARU integrado al lobby de un edificio residencial.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="NEARU Market | Mercados autónomos para edificios en Panamá">
+<meta name="twitter:description" content="Mercados autónomos premium para edificios residenciales en Panamá.">
+<meta name="twitter:image" content="https://nearu.market/images/full/nearu-lobby-14-20m2.jpg">
+
+<!-- ============ Favicon ============ -->
+<link rel="icon" type="image/svg+xml" href="logo/nearu-favicon.svg">
+<link rel="icon" type="image/png" sizes="512x512" href="logo/nearu-favicon-512.png">
+<link rel="apple-touch-icon" href="logo/nearu-favicon-512.png">
+
+<!-- ============ Fonts ============ -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- ============ Preload hero ============ -->
+<link rel="preload" as="image" href="images/full/nearu-lobby-14-20m2.webp" type="image/webp" fetchpriority="high">
+
+<!-- ============ Structured data ============ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "NEARU Market",
+  "description": "Mercados autónomos premium para edificios residenciales en Panamá.",
+  "url": "https://nearu.market",
+  "logo": "https://nearu.market/logo/nearu-logo-horizontal.svg",
+  "email": "hola@nearu.market",
+  "areaServed": "PA",
+  "address": { "@type": "PostalAddress", "addressCountry": "PA" }
+}
+</script>
+
+<style>
+:root{
+  --forest:#123B32;
+  --ivory:#F4EFE5;
+  --charcoal:#171B1A;
+  --lime:#B8E34A;
+  --moss:#739B2E;
+  --ivory-2:#EDE7D9;
+  --line:rgba(23,27,26,.14);
+  --line-light:rgba(244,239,229,.18);
+  --ease:cubic-bezier(.22,.61,.36,1);
+  --pad:clamp(1.25rem,5vw,6rem);
+  --maxw:1400px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+body{
+  font-family:'Manrope',system-ui,sans-serif;
+  background:var(--ivory);
+  color:var(--charcoal);
+  line-height:1.6;
+  font-weight:400;
+  overflow-x:hidden;
+}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+::selection{background:var(--lime);color:var(--forest)}
+
+/* ---------- Type ---------- */
+h1,h2,h3{font-weight:700;line-height:1.04;letter-spacing:-.02em}
+.kicker{
+  font-size:.72rem;font-weight:600;letter-spacing:.24em;text-transform:uppercase;
+  color:var(--moss);display:inline-flex;align-items:center;gap:.6rem;
+}
+.kicker::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--lime);flex:none}
+.kicker--light{color:rgba(244,239,229,.72)}
+.display{font-size:clamp(2.4rem,6.2vw,5.4rem)}
+.h2{font-size:clamp(2rem,4.6vw,3.6rem)}
+.lead{font-size:clamp(1.05rem,1.7vw,1.35rem);font-weight:400;line-height:1.55;color:rgba(23,27,26,.74)}
+.muted{color:rgba(23,27,26,.6)}
+
+/* ---------- Layout ---------- */
+.wrap{max-width:var(--maxw);margin-inline:auto;padding-inline:var(--pad)}
+section{position:relative}
+.pad-y{padding-block:clamp(4.5rem,10vw,9rem)}
+
+/* ---------- Buttons ---------- */
+.btn{
+  display:inline-flex;align-items:center;gap:.7rem;
+  font-size:.92rem;font-weight:600;letter-spacing:.01em;
+  padding:.95rem 1.7rem;border-radius:100px;border:1px solid transparent;
+  cursor:pointer;transition:transform .4s var(--ease),background .4s var(--ease),color .4s var(--ease),border-color .4s var(--ease);
+  white-space:nowrap;
+}
+.btn svg{width:16px;height:16px;transition:transform .4s var(--ease)}
+.btn:hover svg{transform:translateX(4px)}
+.btn--lime{background:var(--lime);color:var(--forest)}
+.btn--lime:hover{background:#c7ef62}
+.btn--forest{background:var(--forest);color:var(--ivory)}
+.btn--forest:hover{background:#0d2c25}
+.btn--ghost{background:transparent;border-color:var(--line);color:var(--charcoal)}
+.btn--ghost:hover{border-color:var(--charcoal)}
+.btn--ghost-light{background:transparent;border-color:rgba(244,239,229,.34);color:var(--ivory)}
+.btn--ghost-light:hover{border-color:var(--ivory);background:rgba(244,239,229,.06)}
+
+/* ---------- Header ---------- */
+.header{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  transition:background .5s var(--ease),box-shadow .5s var(--ease),padding .5s var(--ease);
+  padding-block:1.2rem;
+}
+.header::before{
+  content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
+  background:linear-gradient(to bottom,rgba(9,20,17,.55),rgba(9,20,17,0));
+  opacity:1;transition:opacity .5s var(--ease);
+}
+.header.scrolled{background:var(--forest);padding-block:.75rem;box-shadow:0 1px 0 rgba(244,239,229,.08)}
+.header.scrolled::before{opacity:0}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:2rem}
+.nav__logo{height:30px;width:auto}
+.nav__logo img{height:100%;width:auto}
+.nav__links{display:flex;align-items:center;gap:2rem;list-style:none}
+.nav__links a{
+  font-size:.9rem;font-weight:500;color:var(--ivory);position:relative;padding-block:.2rem;opacity:.86;
+  transition:opacity .3s var(--ease);
+}
+.nav__links a::after{content:"";position:absolute;left:0;bottom:-2px;height:1px;width:0;background:var(--lime);transition:width .35s var(--ease)}
+.nav__links a:hover{opacity:1}
+.nav__links a:hover::after,.nav__links a:focus-visible::after{width:100%}
+.nav__cta{display:inline-flex;align-items:center;gap:1.2rem}
+.nav__toggle{display:none;background:none;border:none;cursor:pointer;width:30px;height:22px;position:relative;z-index:110}
+.nav__toggle span{position:absolute;left:0;height:2px;width:100%;background:var(--ivory);border-radius:2px;transition:transform .4s var(--ease),opacity .3s var(--ease),top .3s var(--ease)}
+.nav__toggle span:nth-child(1){top:2px}
+.nav__toggle span:nth-child(2){top:10px}
+.nav__toggle span:nth-child(3){top:18px}
+body.menu-open .nav__toggle span:nth-child(1){top:10px;transform:rotate(45deg)}
+body.menu-open .nav__toggle span:nth-child(2){opacity:0}
+body.menu-open .nav__toggle span:nth-child(3){top:10px;transform:rotate(-45deg)}
+
+/* ---------- Hero ---------- */
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden}
+.hero__media{position:absolute;inset:0;z-index:-2}
+.hero__media img{width:100%;height:100%;object-fit:cover;object-position:center right}
+.hero__scrim{position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(105deg,rgba(9,20,17,.82) 0%,rgba(9,20,17,.42) 34%,rgba(9,20,17,.04) 60%,rgba(9,20,17,0) 100%),
+             linear-gradient(to top,rgba(9,20,17,.6),rgba(9,20,17,0) 42%);
+}
+.hero__inner{padding-bottom:clamp(3.5rem,8vh,7rem);padding-top:9rem;color:var(--ivory);width:100%}
+.hero__content{max-width:600px}
+.hero .kicker{margin-bottom:1.5rem}
+.hero h1{color:var(--ivory);margin-bottom:1.5rem}
+.hero__text{font-size:clamp(1.05rem,1.7vw,1.3rem);color:rgba(244,239,229,.86);max-width:34ch;margin-bottom:2.4rem;font-weight:400}
+.hero__cta{display:flex;flex-wrap:wrap;gap:1rem}
+.scroll-hint{position:absolute;bottom:2rem;right:var(--pad);z-index:1;display:flex;align-items:center;gap:.7rem;color:rgba(244,239,229,.6);font-size:.72rem;letter-spacing:.2em;text-transform:uppercase}
+.scroll-hint span{width:1px;height:38px;background:linear-gradient(var(--lime),transparent);display:block}
+@media(max-width:640px){.scroll-hint{display:none}}
+
+/* ---------- Intro ---------- */
+.intro{background:var(--ivory)}
+.intro__grid{display:grid;grid-template-columns:1fr;gap:2.5rem}
+.intro__lead{max-width:20ch}
+.intro__body{max-width:52ch}
+.intro__verbs{display:flex;flex-wrap:wrap;gap:.6rem 2rem;margin-top:2.4rem;padding-top:2.2rem;border-top:1px solid var(--line)}
+.intro__verbs span{font-size:.82rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--forest);display:inline-flex;align-items:center;gap:.6rem}
+.intro__verbs span::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--lime)}
+@media(min-width:900px){
+  .intro__grid{grid-template-columns:1fr 1fr;gap:5rem;align-items:end}
+}
+
+/* ---------- Formatos ---------- */
+.formats{background:var(--ivory-2)}
+.formats__head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:1.5rem;margin-bottom:clamp(2.5rem,6vw,5rem)}
+.formats__head p{max-width:40ch;margin-top:1rem}
+.format{display:grid;grid-template-columns:1fr;gap:2rem;align-items:center;padding-block:clamp(2.5rem,5vw,4rem);border-top:1px solid var(--line)}
+.format__media{position:relative;overflow:hidden;border-radius:4px;aspect-ratio:16/10}
+.format__media img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.format:hover .format__media img{transform:scale(1.035)}
+.format__num{position:absolute;top:1rem;left:1.2rem;z-index:2;font-size:.8rem;font-weight:700;letter-spacing:.1em;color:var(--ivory);display:flex;align-items:center;gap:.5rem}
+.format__num::after{content:"";width:5px;height:5px;border-radius:50%;background:var(--lime)}
+.format__body .idx{font-size:clamp(2.6rem,5vw,3.6rem);font-weight:300;color:rgba(18,59,50,.28);letter-spacing:-.03em;line-height:1;display:block;margin-bottom:.6rem}
+.format__body h3{font-size:clamp(1.7rem,3vw,2.4rem);color:var(--forest);margin-bottom:.3rem}
+.format__size{font-size:.85rem;font-weight:600;letter-spacing:.06em;color:var(--moss);text-transform:uppercase;margin-bottom:1.2rem}
+.format__body p{color:rgba(23,27,26,.72);max-width:46ch;margin-bottom:1.6rem}
+.format__facts{list-style:none;display:grid;gap:.7rem}
+.format__facts li{position:relative;padding-left:1.4rem;font-size:.94rem;color:rgba(23,27,26,.8)}
+.format__facts li::before{content:"";position:absolute;left:0;top:.62em;width:8px;height:1px;background:var(--moss)}
+@media(min-width:920px){
+  .format{grid-template-columns:1.15fr .85fr;gap:clamp(3rem,5vw,5.5rem)}
+  .format--reverse .format__media{order:2}
+  .format--reverse .format__body{order:1}
+}
+
+/* ---------- How ---------- */
+.how{background:var(--forest);color:var(--ivory)}
+.how .lead{color:rgba(244,239,229,.72)}
+.how__head{max-width:44ch;margin-bottom:clamp(2.5rem,6vw,4.5rem)}
+.how__head h2{color:var(--ivory)}
+.steps{display:grid;grid-template-columns:1fr;gap:2.5rem}
+.step{padding-top:1.8rem;border-top:1px solid var(--line-light)}
+.step__n{font-size:.78rem;font-weight:700;letter-spacing:.14em;color:var(--lime);margin-bottom:1.4rem;display:block}
+.step h3{font-size:clamp(1.2rem,2vw,1.5rem);color:var(--ivory);margin-bottom:.6rem;font-weight:600}
+.step p{color:rgba(244,239,229,.66);font-size:.96rem}
+.how__note{margin-top:clamp(2.5rem,5vw,4rem);padding-top:2rem;border-top:1px solid var(--line-light);font-size:.9rem;color:rgba(244,239,229,.56);max-width:60ch}
+@media(min-width:820px){.steps{grid-template-columns:repeat(3,1fr);gap:clamp(2rem,4vw,4rem)}}
+
+/* ---------- Benefits ---------- */
+.benefits{background:var(--ivory)}
+.benefits__grid{display:grid;grid-template-columns:1fr;gap:2.5rem}
+.benefits__intro{max-width:24ch}
+.benefits__list{list-style:none;display:grid;grid-template-columns:1fr;gap:0}
+.benefits__list li{padding-block:1.15rem;border-top:1px solid var(--line);font-size:1.02rem;color:rgba(23,27,26,.82);display:flex;gap:1rem;align-items:baseline}
+.benefits__list li:last-child{border-bottom:1px solid var(--line)}
+.benefits__list li span{color:var(--moss);font-size:.78rem;font-weight:700;flex:none;min-width:2ch}
+@media(min-width:900px){
+  .benefits__grid{grid-template-columns:.8fr 1.2fr;gap:5rem}
+  .benefits__list{grid-template-columns:1fr 1fr;column-gap:3.5rem}
+  .benefits__list li:nth-child(2){border-top:1px solid var(--line)}
+}
+
+/* ---------- Tech ---------- */
+.tech{background:var(--charcoal);color:var(--ivory)}
+.tech__grid{display:grid;grid-template-columns:1fr;gap:3rem}
+.tech__head h2{color:var(--ivory)}
+.tech__head p{color:rgba(244,239,229,.66);margin-top:1.2rem;max-width:42ch}
+.tech__list{list-style:none;display:grid;gap:0}
+.tech__list li{display:flex;gap:1.2rem;align-items:baseline;padding-block:1.1rem;border-top:1px solid var(--line-light)}
+.tech__list li strong{font-weight:600;color:var(--ivory);font-size:1rem;min-width:0}
+.tech__list li em{font-style:normal;color:rgba(244,239,229,.6);font-size:.9rem;display:block;margin-top:.2rem}
+.tech__dot{width:6px;height:6px;border-radius:50%;background:var(--lime);flex:none;margin-top:.55em}
+.tech__note{margin-top:2rem;font-size:.88rem;color:rgba(244,239,229,.52);max-width:56ch;padding-top:1.6rem;border-top:1px solid var(--line-light)}
+@media(min-width:900px){.tech__grid{grid-template-columns:.9fr 1.1fr;gap:5rem}}
+
+/* ---------- Reference gallery ---------- */
+.refs{background:var(--ivory-2)}
+.refs__head{max-width:46ch;margin-bottom:clamp(2.5rem,5vw,3.5rem)}
+.refs__grid{display:grid;grid-template-columns:1fr;gap:1rem}
+.ref{position:relative;overflow:hidden;border-radius:4px;aspect-ratio:4/3;background:#ccc}
+.ref img{width:100%;height:100%;object-fit:cover;transition:transform 1.1s var(--ease)}
+.ref:hover img{transform:scale(1.04)}
+.ref__tag{position:absolute;top:.9rem;left:.9rem;z-index:2;background:rgba(9,20,17,.72);color:var(--ivory);font-size:.62rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;padding:.4rem .7rem;border-radius:100px;backdrop-filter:blur(6px)}
+.refs__note{margin-top:1.8rem;font-size:.84rem;color:rgba(23,27,26,.56);max-width:64ch;line-height:1.55}
+@media(min-width:700px){.refs__grid{grid-template-columns:1fr 1fr}}
+@media(min-width:1050px){.refs__grid{grid-template-columns:repeat(4,1fr)}.ref{aspect-ratio:3/4}}
+
+/* ---------- FAQ ---------- */
+.faq{background:var(--ivory)}
+.faq__grid{display:grid;grid-template-columns:1fr;gap:2.5rem}
+.faq__head{max-width:26ch}
+.faq__list{border-top:1px solid var(--line)}
+.faq__item{border-bottom:1px solid var(--line)}
+.faq__q{width:100%;background:none;border:none;cursor:pointer;text-align:left;
+  display:flex;justify-content:space-between;align-items:center;gap:1.5rem;
+  padding-block:1.5rem;font-family:inherit;font-size:clamp(1rem,1.6vw,1.18rem);font-weight:600;color:var(--forest);
+  transition:color .3s var(--ease)}
+.faq__q:hover{color:var(--moss)}
+.faq__icon{flex:none;width:20px;height:20px;position:relative}
+.faq__icon::before,.faq__icon::after{content:"";position:absolute;background:var(--moss);transition:transform .4s var(--ease),opacity .3s var(--ease)}
+.faq__icon::before{top:9px;left:0;width:20px;height:2px}
+.faq__icon::after{left:9px;top:0;width:2px;height:20px}
+.faq__item[aria-expanded="true"] .faq__icon::after{transform:scaleY(0);opacity:0}
+.faq__a{overflow:hidden;max-height:0;transition:max-height .5s var(--ease)}
+.faq__a-inner{padding-bottom:1.6rem;color:rgba(23,27,26,.72);max-width:62ch;font-size:.98rem}
+@media(min-width:900px){.faq__grid{grid-template-columns:.7fr 1.3fr;gap:5rem}}
+
+/* ---------- CTA ---------- */
+.cta{position:relative;background:var(--forest);color:var(--ivory);text-align:center;overflow:hidden}
+.cta__inner{max-width:720px;margin-inline:auto;position:relative;z-index:1}
+.cta h2{color:var(--ivory);margin:1.5rem 0}
+.cta p{color:rgba(244,239,229,.72);font-size:clamp(1.05rem,1.7vw,1.25rem);max-width:48ch;margin:0 auto 2.4rem}
+.cta__glow{position:absolute;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(184,227,74,.16),transparent 68%);top:-40%;left:50%;transform:translateX(-50%);pointer-events:none}
+
+/* ---------- Form ---------- */
+.form-sec{background:var(--ivory)}
+.form-sec__grid{display:grid;grid-template-columns:1fr;gap:3rem}
+.form-sec__aside h2{color:var(--forest)}
+.form-sec__aside p{margin-top:1.2rem;max-width:38ch}
+.form-sec__contact{margin-top:2.4rem;padding-top:2rem;border-top:1px solid var(--line);display:grid;gap:.9rem}
+.form-sec__contact a{font-size:.95rem;color:rgba(23,27,26,.78);display:inline-flex;align-items:center;gap:.7rem;transition:color .3s var(--ease)}
+.form-sec__contact a:hover{color:var(--forest)}
+.form-sec__contact a::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--lime);flex:none}
+form.evalform{display:grid;grid-template-columns:1fr;gap:1.3rem}
+.field{display:flex;flex-direction:column;gap:.5rem}
+.field label{font-size:.78rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:rgba(23,27,26,.66)}
+.field label .req{color:var(--moss)}
+.field input,.field select,.field textarea{
+  font-family:inherit;font-size:.98rem;color:var(--charcoal);
+  background:var(--ivory-2);border:1px solid transparent;border-radius:4px;
+  padding:.85rem 1rem;transition:border-color .3s var(--ease),background .3s var(--ease);width:100%;
+}
+.field textarea{resize:vertical;min-height:120px}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--moss);background:#fff}
+.field input:focus-visible,.field select:focus-visible,.field textarea:focus-visible{outline:2px solid var(--moss);outline-offset:1px}
+.field--error input,.field--error select,.field--error textarea{border-color:#b23a2e;background:#fdf3f1}
+.field__err{font-size:.78rem;color:#b23a2e;min-height:0;display:none}
+.field--error .field__err{display:block}
+.field--hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.consent{display:flex;gap:.7rem;align-items:flex-start;font-size:.86rem;color:rgba(23,27,26,.7);line-height:1.5}
+.consent input{width:18px;height:18px;flex:none;margin-top:.15rem;accent-color:var(--moss)}
+.consent a{color:var(--forest);text-decoration:underline;text-underline-offset:2px}
+.form-status{border-radius:4px;padding:1rem 1.15rem;font-size:.92rem;display:none;line-height:1.5}
+.form-status--ok{display:block;background:rgba(115,155,46,.12);border:1px solid rgba(115,155,46,.4);color:#3f5a17}
+.form-status--info{display:block;background:rgba(18,59,50,.06);border:1px solid var(--line);color:rgba(23,27,26,.75)}
+.form-note{font-size:.76rem;color:rgba(23,27,26,.5);line-height:1.5}
+@media(min-width:600px){.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1.3rem}}
+@media(min-width:960px){.form-sec__grid{grid-template-columns:.85fr 1.15fr;gap:5rem;align-items:start}}
+
+/* ---------- Footer ---------- */
+.footer{background:var(--charcoal);color:var(--ivory);padding-block:clamp(3.5rem,6vw,5rem) 2.5rem}
+.footer__top{display:grid;grid-template-columns:1fr;gap:2.5rem;padding-bottom:3rem;border-bottom:1px solid var(--line-light)}
+.footer__brand img{height:30px;margin-bottom:1.2rem}
+.footer__brand p{color:rgba(244,239,229,.62);font-size:.95rem;max-width:26ch}
+.footer__col h4{font-size:.72rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:rgba(244,239,229,.5);margin-bottom:1.1rem}
+.footer__col ul{list-style:none;display:grid;gap:.7rem}
+.footer__col a{color:rgba(244,239,229,.78);font-size:.92rem;transition:color .3s var(--ease)}
+.footer__col a:hover{color:var(--lime)}
+.footer__bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem;padding-top:2rem;align-items:center}
+.footer__bottom p{font-size:.82rem;color:rgba(244,239,229,.44)}
+.footer__legal{display:flex;gap:1.5rem;flex-wrap:wrap}
+.footer__legal a{font-size:.82rem;color:rgba(244,239,229,.6)}
+.footer__legal a:hover{color:var(--ivory)}
+@media(min-width:760px){.footer__top{grid-template-columns:1.4fr 1fr 1fr;gap:3rem}}
+
+/* ---------- Reveal ---------- */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+
+/* ---------- Mobile nav ---------- */
+@media(max-width:900px){
+  .nav__links,.nav__cta .btn{display:none}
+  .nav__toggle{display:block}
+  .nav__mobile{
+    position:fixed;inset:0;z-index:105;background:var(--forest);
+    display:flex;flex-direction:column;justify-content:center;gap:.4rem;padding:var(--pad);
+    transform:translateY(-100%);transition:transform .55s var(--ease);
+  }
+  body.menu-open{overflow:hidden}
+  body.menu-open .nav__mobile{transform:none}
+  .nav__mobile a{color:var(--ivory);font-size:1.6rem;font-weight:600;padding-block:.6rem;border-bottom:1px solid var(--line-light);opacity:.9}
+  .nav__mobile a:last-of-type{border-bottom:none}
+  .nav__mobile .btn{margin-top:1.5rem;align-self:flex-start}
+}
+@media(min-width:901px){.nav__mobile{display:none}}
+
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;transition-duration:.001ms!important;scroll-behavior:auto!important}
+  .reveal{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="header" id="header">
+  <div class="wrap nav">
+    <a href="#top" class="nav__logo" aria-label="NEARU Market — inicio">
+      <img src="logo/nearu-logo-horizontal-dark.svg" alt="NEARU Market">
+    </a>
+    <nav aria-label="Principal">
+      <ul class="nav__links">
+        <li><a href="#top">Inicio</a></li>
+        <li><a href="#formatos">Formatos</a></li>
+        <li><a href="#como-funciona">Cómo funciona</a></li>
+        <li><a href="#para-tu-ph">Para tu PH</a></li>
+        <li><a href="#tecnologia">Tecnología</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="nav__cta">
+      <a href="#contacto" class="btn btn--lime">Solicitar evaluación</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navMobile">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="nav__mobile" id="navMobile">
+    <a href="#top">Inicio</a>
+    <a href="#formatos">Formatos</a>
+    <a href="#como-funciona">Cómo funciona</a>
+    <a href="#para-tu-ph">Para tu PH</a>
+    <a href="#tecnologia">Tecnología</a>
+    <a href="#contacto">Contacto</a>
+    <a href="#contacto" class="btn btn--lime">Solicitar evaluación</a>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="hero__media">
+    <picture>
+      <source srcset="images/full/nearu-lobby-14-20m2.webp" type="image/webp">
+      <img src="images/full/nearu-lobby-14-20m2.jpg" alt="Mercado autónomo NEARU integrado al lobby de un edificio residencial." width="1920" height="1080" fetchpriority="high">
+    </picture>
+  </div>
+  <div class="hero__scrim"></div>
+  <div class="wrap hero__inner">
+   <div class="hero__content">
+    <p class="kicker">Mercados autónomos para edificios residenciales</p>
+    <h1 class="display">Tu mercado,<br>donde vives.</h1>
+    <p class="hero__text">Mercados autónomos premium diseñados para integrarse naturalmente a edificios residenciales.</p>
+    <div class="hero__cta">
+      <a href="#contacto" class="btn btn--lime">Quiero NEARU en mi edificio
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <a href="#formatos" class="btn btn--ghost-light">Conocer los formatos</a>
+    </div>
+   </div>
+  </div>
+  <div class="scroll-hint"><span></span>Descubre</div>
+</section>
+
+<!-- ============ INTRO ============ -->
+<section class="intro pad-y">
+  <div class="wrap intro__grid reveal">
+    <div>
+      <p class="kicker" style="margin-bottom:1.5rem">Una nueva amenidad</p>
+      <h2 class="h2 intro__lead" style="color:var(--forest)">Una nueva amenidad para tu edificio.</h2>
+    </div>
+    <div>
+      <p class="lead intro__body">NEARU diseña, instala, abastece y opera mercados autónomos dentro de edificios residenciales. Cada ubicación se adapta al espacio, la arquitectura y el perfil de consumo de su comunidad.</p>
+      <div class="intro__verbs">
+        <span>Diseña</span><span>Instala</span><span>Abastece</span><span>Opera</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FORMATOS ============ -->
+<section class="formats pad-y" id="formatos">
+  <div class="wrap">
+    <div class="formats__head reveal">
+      <div>
+        <p class="kicker" style="margin-bottom:1rem">Colección de formatos</p>
+        <h2 class="h2" style="color:var(--forest)">Cuatro formatos.<br>Una misma precisión.</h2>
+      </div>
+      <p class="muted">Cada formato se concibe como una pieza arquitectónica, adaptada al espacio disponible y a la escala de cada comunidad.</p>
+    </div>
+
+    <!-- 01 MINI -->
+    <article class="format reveal">
+      <div class="format__media">
+        <span class="format__num">Formato 01</span>
+        <picture>
+          <source srcset="images/full/nearu-mini-8m2.webp" type="image/webp">
+          <img src="images/full/nearu-mini-8m2.jpg" alt="Formato Mini de NEARU: micromercado abierto integrado a una pared del edificio." width="1920" height="1080" loading="lazy">
+        </picture>
+      </div>
+      <div class="format__body">
+        <span class="idx">01</span>
+        <h3>Mini</h3>
+        <p class="format__size">Aproximadamente 8 m²</p>
+        <p>Un micromercado abierto que aprovecha una pared, un nicho o una esquina disponible. Integra refrigeración, estanterías y shelf checkout en una solución compacta.</p>
+        <ul class="format__facts">
+          <li>Se ubica dentro de un área con techo.</li>
+          <li>Puede permanecer completamente abierto.</li>
+          <li>No necesita puerta.</li>
+          <li>Aprovecha la seguridad existente del edificio.</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- 02 LOBBY -->
+    <article class="format format--reverse reveal">
+      <div class="format__media">
+        <span class="format__num">Formato 02</span>
+        <picture>
+          <source srcset="images/full/nearu-lobby-14-20m2.webp" type="image/webp">
+          <img src="images/full/nearu-lobby-14-20m2.jpg" alt="Formato Lobby de NEARU: instalación abierta y modular integrada al lobby residencial." width="1920" height="1080" loading="lazy">
+        </picture>
+      </div>
+      <div class="format__body">
+        <span class="idx">02</span>
+        <h3>Lobby</h3>
+        <p class="format__size">Recomendado entre 14 y 20 m²</p>
+        <p>Una instalación abierta, elegante y modular que se integra al lobby y aprovecha la seguridad existente del edificio.</p>
+        <ul class="format__facts">
+          <li>No requiere puerta.</li>
+          <li>No requiere vidrio frontal.</li>
+          <li>No requiere torniquete.</li>
+          <li>Puede instalarse próximo a elevadores o áreas de circulación.</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- 03 CONTAINER 20FT -->
+    <article class="format reveal">
+      <div class="format__media">
+        <span class="format__num">Formato 03</span>
+        <picture>
+          <source srcset="images/full/nearu-container-20ft-14m2.webp" type="image/webp">
+          <img src="images/full/nearu-container-20ft-14m2.jpg" alt="Formato Container exterior 20 pies de NEARU junto a un área social frente a la piscina." width="1920" height="1080" loading="lazy">
+        </picture>
+      </div>
+      <div class="format__body">
+        <span class="idx">03</span>
+        <h3>Container exterior 20 ft</h3>
+        <p class="format__size">Aproximadamente 14 m²</p>
+        <p>Una solución exterior compacta para piscinas, kids clubs y áreas sociales.</p>
+        <ul class="format__facts">
+          <li>Tiene puerta física.</li>
+          <li>Está acondicionado para exteriores.</li>
+          <li>Puede incorporar acceso mediante QR o Face ID (reconocimiento facial).</li>
+          <li>Su diseño se integra con el área social.</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- 04 CONTAINER 40FT -->
+    <article class="format format--reverse reveal">
+      <div class="format__media">
+        <span class="format__num">Formato 04</span>
+        <picture>
+          <source srcset="images/full/nearu-container-40ft-28m2.webp" type="image/webp">
+          <img src="images/full/nearu-container-40ft-28m2.jpg" alt="Formato Container exterior 40 pies de NEARU, con mayor capacidad y refrigeración." width="1920" height="1080" loading="lazy">
+        </picture>
+      </div>
+      <div class="format__body">
+        <span class="idx">04</span>
+        <h3>Container exterior 40 ft</h3>
+        <p class="format__size">Aproximadamente 28 m²</p>
+        <p>Mayor capacidad, surtido y refrigeración para comunidades residenciales de mayor escala.</p>
+        <ul class="format__facts">
+          <li>Tiene puerta física.</li>
+          <li>Puede utilizar acceso mediante QR o Face ID (reconocimiento facial).</li>
+          <li>Ofrece una experiencia interior más amplia.</li>
+          <li>Mantiene la identidad premium de NEARU.</li>
+        </ul>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============ CÓMO FUNCIONA ============ -->
+<section class="how pad-y" id="como-funciona">
+  <div class="wrap">
+    <div class="how__head reveal">
+      <p class="kicker kicker--light" style="margin-bottom:1rem">Cómo funciona</p>
+      <h2 class="h2">Comprar es tan simple<br>como estar en casa.</h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal">
+        <span class="step__n">Paso 01</span>
+        <h3>Selecciona tus productos</h3>
+        <p>Recorres el mercado y eliges lo que necesitas, como en cualquier tienda física del edificio.</p>
+      </div>
+      <div class="step reveal">
+        <span class="step__n">Paso 02</span>
+        <h3>Registra la compra en el shelf checkout</h3>
+        <p>Registras tus productos directamente en el punto de checkout integrado a la instalación.</p>
+      </div>
+      <div class="step reveal">
+        <span class="step__n">Paso 03</span>
+        <h3>Paga y continúa con tu día</h3>
+        <p>Completas el pago electrónico y sigues con tu rutina. Sin cajas atendidas, sin filas.</p>
+      </div>
+    </div>
+    <p class="how__note reveal">Los formatos interiores abiertos no requieren una aplicación. El acceso mediante código QR se reserva para containers o ubicaciones que necesiten control de entrada. El reconocimiento facial es opcional y se habilita solo en formatos que lo requieran.</p>
+  </div>
+</section>
+
+<!-- ============ BENEFICIOS PH ============ -->
+<section class="benefits pad-y" id="para-tu-ph">
+  <div class="wrap benefits__grid">
+    <div class="benefits__intro reveal">
+      <p class="kicker" style="margin-bottom:1rem">Para tu PH</p>
+      <h2 class="h2" style="color:var(--forest)">Una amenidad que trabaja para tu comunidad.</h2>
+    </div>
+    <ul class="benefits__list reveal">
+      <li><span>01</span>Una amenidad útil y diferenciadora.</li>
+      <li><span>02</span>Mayor conveniencia para propietarios y residentes.</li>
+      <li><span>03</span>Diseño alineado con la arquitectura del edificio.</li>
+      <li><span>04</span>Operación gestionada por NEARU.</li>
+      <li><span>05</span>Reabastecimiento administrado por NEARU.</li>
+      <li><span>06</span>Surtido adaptado a cada comunidad.</li>
+      <li><span>07</span>Inventario y monitoreo remoto.</li>
+      <li><span>08</span>Atención para residentes y administración.</li>
+      <li><span>09</span>Formatos adaptables al espacio disponible.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ TECNOLOGÍA ============ -->
+<section class="tech pad-y" id="tecnologia">
+  <div class="wrap tech__grid">
+    <div class="tech__head reveal">
+      <p class="kicker kicker--light" style="margin-bottom:1rem">Tecnología y seguridad</p>
+      <h2 class="h2">Tecnología que se siente invisible.</h2>
+      <p>La operación de cada mercado se apoya en tecnología discreta y confiable, pensada para que la experiencia del residente sea simple y sin fricción.</p>
+    </div>
+    <div class="reveal">
+      <ul class="tech__list">
+        <li><span class="tech__dot"></span><div><strong>Shelf checkout</strong><em>Registro de compra integrado a la instalación.</em></div></li>
+        <li><span class="tech__dot"></span><div><strong>Pagos electrónicos</strong><em>Cobro digital, sin caja atendida.</em></div></li>
+        <li><span class="tech__dot"></span><div><strong>Inventario remoto</strong><em>Control de existencias en tiempo real.</em></div></li>
+        <li><span class="tech__dot"></span><div><strong>Monitoreo operacional</strong><em>Supervisión continua de cada punto.</em></div></li>
+        <li><span class="tech__dot"></span><div><strong>Cámaras profesionales</strong><em>Visión por computadora que optimiza el surtido y la experiencia de compra.</em></div></li>
+        <li><span class="tech__dot"></span><div><strong>Trazabilidad de las transacciones</strong><em>Cada compra queda registrada.</em></div></li>
+        <li><span class="tech__dot"></span><div><strong>Acceso mediante QR o Face ID</strong><em>Acceso biométrico opcional; se activa cuando el formato lo requiere.</em></div></li>
+      </ul>
+      <p class="tech__note">En los formatos Mini y Lobby, la seguridad principal proviene del control de acceso existente del edificio, complementado por cámaras y trazabilidad de compras.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="faq pad-y">
+  <div class="wrap faq__grid">
+    <div class="faq__head reveal">
+      <p class="kicker" style="margin-bottom:1rem">Preguntas frecuentes</p>
+      <h2 class="h2" style="color:var(--forest)">Todo lo que tu administración necesita saber.</h2>
+    </div>
+    <div class="faq__list reveal" id="faqList">
+      <div class="faq__item">
+        <button class="faq__q" aria-expanded="false"><span>¿Cuánto espacio necesita NEARU?</span><span class="faq__icon" aria-hidden="true"></span></button>
+        <div class="faq__a"><div class="faq__a-inner">NEARU se adapta al espacio disponible. El formato Mini parte de aproximadamente 8 m², el Lobby se recomienda entre 14 y 20 m², y los containers exteriores ofrecen alrededor de 14 m² (20 ft) y 28 m² (40 ft). Evaluamos cada edificio para definir el formato adecuado.</div></div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__q" aria-expanded="false"><span>¿El formato Mini necesita puerta?</span><span class="faq__icon" aria-hidden="true"></span></button>
+        <div class="faq__a"><div class="faq__a-inner">No. El formato Mini es una instalación abierta ubicada dentro de un área con techo. Aprovecha el control de acceso y la seguridad existente del edificio, complementados por cámaras y trazabilidad de las compras.</div></div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__q" aria-expanded="false"><span>¿El Lobby necesita una puerta?</span><span class="faq__icon" aria-hidden="true"></span></button>
+        <div class="faq__a"><div class="faq__a-inner">No. El formato Lobby es abierto y modular: no requiere puerta, vidrio frontal ni torniquete. Puede instalarse próximo a elevadores o áreas de circulación, apoyándose en la seguridad del edificio.</div></div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__q" aria-expanded="false"><span>¿Cómo se realiza el pago?</span><span class="faq__icon" aria-hidden="true"></span></button>
+        <div class="faq__a"><div class="faq__a-inner">El residente selecciona sus productos, los registra en el shelf checkout y realiza un pago electrónico. No existe una caja atendida.</div></div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__q" aria-expanded="false"><span>¿Quién repone los productos?</span><span class="faq__icon" aria-hidden="true"></span></button>
+        <div class="faq__a"><div class="faq__a-inner">NEARU se encarga del reabastecimiento. La operación, el surtido y la reposición son administrados por NEARU para que el edificio no tenga que gestionarlos.</div></div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__q" aria-expanded="false"><span>¿Cómo se controla el inventario?</span><span class="faq__icon" aria-hidden="true"></span></button>
+        <div class="faq__a"><div class="faq__a-inner">El inventario se controla de forma remota, con monitoreo operacional continuo y trazabilidad de cada transacción.</div></div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__q" aria-expanded="false"><span>¿NEARU utiliza reconocimiento facial?</span><span class="faq__icon" aria-hidden="true"></span></button>
+        <div class="faq__a"><div class="faq__a-inner">Depende del formato y de la configuración del edificio. NEARU opera con un sistema de control de acceso adaptable: en los formatos interiores abiertos no se requiere reconocimiento facial, mientras que en instalaciones que lo ameriten puede habilitarse reconocimiento facial biométrico, con cifrado y trazabilidad de extremo a extremo.</div></div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__q" aria-expanded="false"><span>¿Cuándo se utiliza acceso mediante QR?</span><span class="faq__icon" aria-hidden="true"></span></button>
+        <div class="faq__a"><div class="faq__a-inner">El acceso mediante código QR se reserva para los containers exteriores o para ubicaciones que necesiten control de entrada. Los formatos interiores abiertos no lo requieren.</div></div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__q" aria-expanded="false"><span>¿Qué debe aportar el edificio?</span><span class="faq__icon" aria-hidden="true"></span></button>
+        <div class="faq__a"><div class="faq__a-inner">Principalmente el espacio adecuado para el formato seleccionado. NEARU se encarga del diseño, la instalación, el surtido, el inventario, la tecnología, el monitoreo y el reabastecimiento.</div></div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__q" aria-expanded="false"><span>¿Cómo se define el surtido?</span><span class="faq__icon" aria-hidden="true"></span></button>
+        <div class="faq__a"><div class="faq__a-inner">El surtido se adapta al perfil de consumo de cada comunidad. Cada ubicación se ajusta al espacio, la arquitectura y los hábitos de sus residentes.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA FINAL ============ -->
+<section class="cta pad-y">
+  <div class="cta__glow"></div>
+  <div class="wrap cta__inner reveal">
+    <p class="kicker kicker--light" style="justify-content:center">Solicitar evaluación</p>
+    <h2 class="h2">Una mejor amenidad empieza más cerca.</h2>
+    <p>Cuéntanos sobre tu edificio y evaluaremos el formato adecuado para su comunidad.</p>
+    <a href="#contacto" class="btn btn--lime">Solicitar evaluación
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+  </div>
+</section>
+
+<!-- ============ FORMULARIO ============ -->
+<section class="form-sec pad-y" id="contacto">
+  <div class="wrap form-sec__grid">
+    <aside class="form-sec__aside reveal">
+      <p class="kicker" style="margin-bottom:1rem">Contacto</p>
+      <h2 class="h2">Evaluemos el espacio de tu edificio.</h2>
+      <p class="muted">Completa el formulario y nuestro equipo se comunicará para coordinar una evaluación privada del espacio y su comunidad.</p>
+      <div class="form-sec__contact">
+        <a href="mailto:ventas@nearu.market">ventas@nearu.market</a>
+        <a href="mailto:hola@nearu.market">hola@nearu.market</a>
+      </div>
+    </aside>
+
+    <!--
+      PUNTO DE INTEGRACIÓN DEL FORMULARIO
+      El formulario todavía NO está conectado a un backend.
+      Para conectarlo, define el endpoint en data-endpoint del <form>
+      (Formspree, un webhook, o una función serverless que envíe a ventas@nearu.market).
+      Mientras data-endpoint esté vacío, el envío abre el cliente de correo hacia
+      ventas@nearu.market (no simula éxito).
+    -->
+    <form class="evalform reveal" id="evalForm" data-endpoint="" novalidate>
+      <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+
+      <div class="form-row">
+        <div class="field">
+          <label for="nombre">Nombre y apellido <span class="req">*</span></label>
+          <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+          <span class="field__err">Ingresa tu nombre y apellido.</span>
+        </div>
+        <div class="field">
+          <label for="empresa">Empresa o administración</label>
+          <input type="text" id="empresa" name="empresa" autocomplete="organization">
+          <span class="field__err"></span>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="field">
+          <label for="edificio">Edificio o proyecto</label>
+          <input type="text" id="edificio" name="edificio">
+          <span class="field__err"></span>
+        </div>
+        <div class="field">
+          <label for="unidades">Número de unidades</label>
+          <input type="number" id="unidades" name="unidades" min="0" inputmode="numeric">
+          <span class="field__err"></span>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="field">
+          <label for="ubicacion">Ubicación</label>
+          <input type="text" id="ubicacion" name="ubicacion" placeholder="Ciudad, provincia">
+          <span class="field__err"></span>
+        </div>
+        <div class="field">
+          <label for="formato">Formato de interés</label>
+          <select id="formato" name="formato">
+            <option value="" selected>Selecciona una opción</option>
+            <option value="Mini — aproximadamente 8 m²">Mini — aproximadamente 8 m²</option>
+            <option value="Lobby — recomendado entre 14 y 20 m²">Lobby — recomendado entre 14 y 20 m²</option>
+            <option value="Container 20 FT — aproximadamente 14 m²">Container 20 FT — aproximadamente 14 m²</option>
+            <option value="Container 40 FT — aproximadamente 28 m²">Container 40 FT — aproximadamente 28 m²</option>
+            <option value="Necesito asesoría">Necesito asesoría</option>
+          </select>
+          <span class="field__err"></span>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="field">
+          <label for="telefono">Teléfono <span class="req">*</span></label>
+          <input type="tel" id="telefono" name="telefono" autocomplete="tel" required>
+          <span class="field__err">Ingresa un teléfono de contacto.</span>
+        </div>
+        <div class="field">
+          <label for="correo">Correo electrónico <span class="req">*</span></label>
+          <input type="email" id="correo" name="correo" autocomplete="email" required>
+          <span class="field__err">Ingresa un correo electrónico válido.</span>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos sobre el espacio disponible en tu edificio."></textarea>
+        <span class="field__err"></span>
+      </div>
+
+      <div class="field--hp" aria-hidden="true">
+        <label for="website">No completar este campo</label>
+        <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+      </div>
+
+      <label class="consent">
+        <input type="checkbox" id="consent" name="consent" required>
+        <span>Autorizo a NEARU Market a tratar mis datos para responder a esta solicitud, de acuerdo con la <a href="privacidad.html">Política de privacidad</a>. <span class="req">*</span></span>
+      </label>
+
+      <button type="submit" class="btn btn--forest" style="justify-self:start;margin-top:.4rem">Solicitar evaluación
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </button>
+      <p class="form-note">Los campos marcados con <span style="color:var(--moss)">*</span> son obligatorios. NEARU no comparte tus datos con terceros ajenos a esta evaluación.</p>
+    </form>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <img src="logo/nearu-logo-horizontal-dark.svg" alt="NEARU Market">
+        <p>Tu mercado, donde vives.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="mailto:hola@nearu.market">hola@nearu.market</a></li>
+          <li><a href="mailto:ventas@nearu.market">ventas@nearu.market</a></li>
+          <li><a href="mailto:soporte@nearu.market">soporte@nearu.market</a></li>
+          <li><span style="color:rgba(244,239,229,.6);font-size:.92rem">Panamá</span></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="#formatos">Formatos</a></li>
+          <li><a href="#como-funciona">Cómo funciona</a></li>
+          <li><a href="#para-tu-ph">Para tu PH</a></li>
+          <li><a href="#tecnologia">Tecnología</a></li>
+          <li><a href="#contacto">Solicitar evaluación</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© <span id="year">2026</span> NEARU Market. Todos los derechos reservados.</p>
+      <div class="footer__legal">
+        <a href="#" aria-label="Instagram de NEARU Market (pendiente de URL)">Instagram</a>
+        <a href="#" aria-label="LinkedIn de NEARU Market (pendiente de URL)">LinkedIn</a>
+        <a href="privacidad.html">Política de privacidad</a>
+        <a href="terminos.html">Términos de uso</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+  var doc=document, body=doc.body;
+  var header=doc.getElementById('header');
+  function onScroll(){ header.classList.toggle('scrolled', window.scrollY>40); }
+  onScroll(); window.addEventListener('scroll', onScroll, {passive:true});
+
+  var toggle=doc.getElementById('navToggle'), mobile=doc.getElementById('navMobile');
+  function closeMenu(){ body.classList.remove('menu-open'); toggle.setAttribute('aria-expanded','false'); toggle.setAttribute('aria-label','Abrir menú'); }
+  toggle.addEventListener('click', function(){
+    var open=body.classList.toggle('menu-open');
+    toggle.setAttribute('aria-expanded', open?'true':'false');
+    toggle.setAttribute('aria-label', open?'Cerrar menú':'Abrir menú');
+  });
+  mobile.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', closeMenu); });
+  window.addEventListener('keydown', function(e){ if(e.key==='Escape') closeMenu(); });
+
+  doc.querySelectorAll('.faq__q').forEach(function(btn){
+    var item=btn.parentElement, panel=btn.nextElementSibling;
+    btn.addEventListener('click', function(){
+      var open=btn.getAttribute('aria-expanded')==='true';
+      btn.setAttribute('aria-expanded', open?'false':'true');
+      item.setAttribute('aria-expanded', open?'false':'true');
+      panel.style.maxHeight = open ? null : panel.scrollHeight+'px';
+    });
+  });
+
+  var reveals=doc.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); } });
+    },{rootMargin:'0px 0px -8% 0px',threshold:.08});
+    reveals.forEach(function(el){ io.observe(el); });
+  } else {
+    reveals.forEach(function(el){ el.classList.add('in'); });
+  }
+
+  doc.getElementById('year').textContent = new Date().getFullYear();
+
+  var form=doc.getElementById('evalForm'), status=doc.getElementById('formStatus');
+  function setError(input, on){ var field=input.closest('.field'); if(field) field.classList.toggle('field--error', on); }
+  function validEmail(v){ return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v); }
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    status.className='form-status';
+    if(form.website.value){ return; }
+    var ok=true;
+    var nombre=form.nombre, tel=form.telefono, correo=form.correo, consent=form.consent;
+    [nombre,tel,correo].forEach(function(i){ setError(i,false); });
+    if(!nombre.value.trim()){ setError(nombre,true); ok=false; }
+    if(!tel.value.trim()){ setError(tel,true); ok=false; }
+    if(!validEmail(correo.value.trim())){ setError(correo,true); ok=false; }
+    if(!consent.checked){ ok=false; status.className='form-status form-status--info'; status.textContent='Para continuar, autoriza el tratamiento de datos.'; }
+    if(!ok){
+      var firstErr=form.querySelector('.field--error input, .field--error select, .field--error textarea');
+      if(firstErr) firstErr.focus();
+      return;
+    }
+    var endpoint=form.getAttribute('data-endpoint');
+    if(endpoint){
+      var data=new FormData(form);
+      status.className='form-status form-status--info'; status.textContent='Enviando solicitud…';
+      fetch(endpoint,{method:'POST',body:data,headers:{'Accept':'application/json'}})
+        .then(function(r){ if(!r.ok) throw new Error('bad'); return r; })
+        .then(function(){ form.reset(); status.className='form-status form-status--ok'; status.textContent='Gracias. Recibimos tu solicitud y nuestro equipo se comunicará para coordinar la evaluación.'; })
+        .catch(function(){ status.className='form-status form-status--info'; status.textContent='No pudimos enviar la solicitud en este momento. Escríbenos directamente a ventas@nearu.market.'; });
+    } else {
+      var subject=encodeURIComponent('Solicitud de evaluación — '+(form.edificio.value||form.empresa.value||form.nombre.value));
+      var lines=[
+        'Nombre: '+form.nombre.value,
+        'Empresa/administración: '+form.empresa.value,
+        'Edificio/proyecto: '+form.edificio.value,
+        'Número de unidades: '+form.unidades.value,
+        'Ubicación: '+form.ubicacion.value,
+        'Formato de interés: '+form.formato.value,
+        'Teléfono: '+form.telefono.value,
+        'Correo: '+form.correo.value,
+        '',
+        'Mensaje:',
+        form.mensaje.value
+      ];
+      var mailto='mailto:ventas@nearu.market?subject='+subject+'&body='+encodeURIComponent(lines.join('\n'));
+      status.className='form-status form-status--info';
+      status.textContent='Abriendo tu correo para enviar la solicitud a ventas@nearu.market. Si no se abre, escríbenos directamente a esa dirección.';
+      window.location.href=mailto;
+    }
+  });
+})();
+</script>
+</body>
+</html>
