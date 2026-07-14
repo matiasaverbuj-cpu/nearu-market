@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200" role="img" aria-labelledby="title desc">
+  <title id="title">NEARU Market — símbolo</title>
+  <desc id="desc">NEARU Market, mercados autónomos para edificios residenciales.</desc>
+  
+  <g transform="translate(0 0) scale(1.0)">
+  <path d="M38 156 L38 62 C38 41 49 30 65 30 C76 30 84 35 92 44 L127 84 C135 93 140 97 148 97 C158 97 163 89 163 78 L163 30"
+        fill="none" stroke="#171B1A" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="169" cy="154" r="11" fill="#171B1A"/>
+</g>
+</svg>

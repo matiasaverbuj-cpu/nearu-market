@@ -1,0 +1,50 @@
+{
+  "brand": "NEARU Market",
+  "primary_format": "webp",
+  "assets": [
+    {
+      "id": "mini",
+      "title": "Mini",
+      "area": "aproximadamente 8 m²",
+      "webp": "images/full/nearu-mini-8m2.webp",
+      "jpg": "images/full/nearu-mini-8m2.jpg",
+      "thumbnail": "images/thumbs/nearu-mini-8m2-thumb.webp",
+      "width": 1920,
+      "height": 1080,
+      "alt": "Mercado autónomo NEARU Mini abierto e integrado en una esquina del lobby de un edificio residencial"
+    },
+    {
+      "id": "lobby",
+      "title": "Lobby",
+      "area": "14–20 m²",
+      "webp": "images/full/nearu-lobby-14-20m2.webp",
+      "jpg": "images/full/nearu-lobby-14-20m2.jpg",
+      "thumbnail": "images/thumbs/nearu-lobby-14-20m2-thumb.webp",
+      "width": 1920,
+      "height": 1080,
+      "alt": "Mercado autónomo NEARU abierto e integrado al lobby de un edificio residencial"
+    },
+    {
+      "id": "container-20",
+      "title": "Container 20 FT",
+      "area": "aproximadamente 14 m²",
+      "webp": "images/full/nearu-container-20ft-14m2.webp",
+      "jpg": "images/full/nearu-container-20ft-14m2.jpg",
+      "thumbnail": "images/thumbs/nearu-container-20ft-14m2-thumb.webp",
+      "width": 1920,
+      "height": 1080,
+      "alt": "Container NEARU de 20 pies junto a la piscina y el kids club de un edificio residencial"
+    },
+    {
+      "id": "container-40",
+      "title": "Container 40 FT",
+      "area": "aproximadamente 28 m²",
+      "webp": "images/full/nearu-container-40ft-28m2.webp",
+      "jpg": "images/full/nearu-container-40ft-28m2.jpg",
+      "thumbnail": "images/thumbs/nearu-container-40ft-28m2-thumb.webp",
+      "width": 1920,
+      "height": 1080,
+      "alt": "Container NEARU de 40 pies con mercado autónomo en el área social de un edificio residencial"
+    }
+  ]
+}
